@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Document</title>
+  <link rel="stylesheet" href="css/libs.min.css" />
+  <link rel="stylesheet" href="css/style.min.css" />
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;900&display=swap" rel="stylesheet"> 
+</head>
+
+<body class="page container">
+
+  <header class="header">
+    <div class="header__logo">
+      <img class="header__logo_img" src="/images/header/header_logo_img.svg" alt="company logo">
+      <img class="header__logo_name" src="/images/header/header_logo_name.svg" alt="company name">
+      <p class="header__logo_text">языковая школа</p>
+    </div>
+    <div class="header__search">
+      <form class="header__search_form" action="" method="get">
+        <input class="header__search_box" placeholder="Поиск....." type="search">
+        <!-- <button type="submit">Искать</button> -->
+      </form>
+    </div>
+    <div class="header__user">
+      <img class="header__user_photo" src="/images/header/user_little15.jpg" alt="user photo">
+      <div class="header__user_name">Little Fifteen</div>
+      <img class="header__user_menu" src="/images/header/header_menu_arrow.svg" alt="menu arrow">
+    </div>
+    <div class="header__languages">
+      <label class="header__languages_switch languages__switch">
+        <input class="languages__switch_input" type="checkbox">
+        <span class="languages__switch_background"></span>
+        <span class="languages__switch_slider"></span>  
+        <p class="languages__switch_rus-text languages__switch_text">RU</p>
+        <p class="languages__switch_eng-text languages__switch_text">EN</p>
+      </label>  
+    </div>
+    <div class="header__notification">
+      <a href="#noanchor">
+        <img class="header__notification_img" src="/images/header/header_bell.svg" alt="notification">
+        <span class="header__notification_counter">1</span>
+      </a>
+    </div>
+  </header>
+
+  <aside class="aside">
+    <h1 class="aside__title">Кабинет ученика</h1>
+    <nav class="aside__nav">
+      <ul class="aside__nav_list">
+        <li class="aside__nav_item">
+          <a class="aside__nav_item-link" href="#noanchor">Теоретическая часть</a>
+        </li>
+        <li class="aside__nav_item">
+          <a class="aside__nav_item-link" href="#noanchor">Видео уроки</a>
+        </li>
+        <li class="aside__nav_item">
+          <a class="aside__nav_item-link" href="#noanchor">Домашние задания</a>
+        </li>
+        <li class="aside__nav_item">
+          <a class="aside__nav_item-link" href="#noanchor">Тестирование</a>
+        </li>
+        <li class="aside__nav_item">
+          <a class="aside__nav_item-link" href="#noanchor">Экзамены</a>
+        </li>
+      </ul>
+    </nav>
+    <div class="aside__settings">Настройки</div>
+  </aside>
+
+
+  <main class="main">
+    <section class="main__slider">слайдер</section>
+    <section class="main__events">события</section>
+    <section class="main__contacts">контакты</section>
+    <section class="main__lessons">уроки</section>
+  </main>
+
+  <footer class="footer">подвал</footer>
+
+  <script src="js/main.js"></script>
+</body>
+
+</html>
