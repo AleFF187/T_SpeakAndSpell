@@ -1,0 +1,82 @@
+@import "start_settings";
+@import "custom_properties";
+@import "mixin";
+@import "header";
+
+body{
+  font-family: 'Roboto', "Arial", sans-serif;
+  font-style: normal;
+  font-size: 10px;
+}
+
+.container {
+  width: 1500px;
+  padding: 0 10px;
+  margin: 0 auto;
+}
+
+.page {
+  display: grid;
+  grid-template-areas: "header header" "aside main" "footer footer";
+  grid-template-columns: 280px 1fr;
+  grid-template-rows: 80px 1fr 60px;
+  min-height: 100vh;
+}
+
+//! *******************************************************
+.aside {
+  // background-color: yellow;
+  grid-area: aside;
+  display: grid;
+  grid-template-rows: 80px 1fr 92px;
+}
+
+.aside__title {
+}
+.aside__nav {
+}
+.aside__nav_list {
+}
+.aside__nav_item {
+}
+.aside__nav_item-link {
+}
+
+//! *******************************************************
+.main {
+  background-color: #f1f3fe;
+  grid-area: main;
+  padding: 30px;
+  display: grid;
+  grid-template-areas: "main__slider main__contacts" "main__events main__contacts" "main__lessons main__contacts";
+  grid-template-columns: 3fr 1fr;
+  grid-template-rows: 300px auto 300px;
+  grid-gap: 20px;
+}
+
+.main__slider {
+    grid-area: main__slider;
+    background-color: tomato;
+}
+
+.main__events {
+    grid-area: main__events;
+    background-color: tomato;
+}
+
+.main__contacts {
+    grid-area: main__contacts;
+    background-color: tomato;
+}
+
+.main__lessons {
+    grid-area: main__lessons;
+    background-color: tomato;
+}
+
+//! *******************************************************
+.footer {
+    color: #fff;
+    background-color: #3c425f;
+    grid-area: footer;
+}

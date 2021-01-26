@@ -1,0 +1,14 @@
+// разделительные полосы для заголовка
+// требует position: relative; у родителя
+@mixin left_border {
+  &::before{
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    width: 2px;
+    height: 40px;
+    background-color: var(--lightviolet);
+  }  
+}
