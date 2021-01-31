@@ -32,12 +32,12 @@
       <img class="header__user_menu" src="/images/header/header_menu_arrow.svg" alt="menu arrow">
     </div>
     <div class="header__languages">
-      <label class="header__languages_switch languages__switch">
-        <input class="languages__switch_input" type="checkbox">
-        <span class="languages__switch_background"></span>
-        <span class="languages__switch_slider"></span>  
-        <p class="languages__switch_rus-text languages__switch_text">RU</p>
-        <p class="languages__switch_eng-text languages__switch_text">EN</p>
+      <label class="header__languages_switch switch">
+        <input class="switch__input" type="checkbox">
+        <span class="switch__background"></span>
+        <span class="switch__slider"></span>  
+        <p class="switch__text_left switch__text">RU</p>
+        <p class="switch__text_right switch__text">EN</p>
       </label>  
     </div>
     <div class="header__notification">
@@ -50,8 +50,9 @@
 
   <aside class="aside">
     <div class="aside__title">
-      <h1 class="aside__title_text">Кабинет ученика</h1>
-      <img class="aside__title_img"src="/images/aside/aside_icon_cabinet.svg" alt="cabinet logo">
+      <p class="aside__title_text">Кабинет ученика
+        <img class="aside__title_img"src="/images/aside/aside_icon_cabinet.svg" alt="cabinet icon">
+      </p>
     </div>
     <nav class="aside__nav">
       <ul class="aside__nav_list">
@@ -72,7 +73,25 @@
         </li>
       </ul>
     </nav>
-    <div class="aside__settings">Настройки</div>
+    <div class="aside__settings">
+      <p class="aside__settings_text">Цветовая схема
+        <img class="aside__settings_img" src="/images/aside/aside_icon_settings.svg" alt="settings icon">
+      </p>      
+      <div class="aside__settings_wrapper">
+        <label class="switch">
+          <input class="switch__input" type="checkbox">
+          <span class="switch__background"></span>
+          <span class="switch__slider"></span>  
+          <p class="switch__text_left switch__text">
+            <img class="aside__settings_left-ico" src="/images/aside/aside_icon_light_theme.svg" alt="light theme icon">
+          </p>
+          <p class="switch__text_right switch__text">
+            <img class="aside__settings_right-ico" src="/images/aside/aside_icon_dark_theme.svg" alt="dark theme icon">
+          </p>
+        </label>  
+      </div>
+    </div>
+    
   </aside>
 
 

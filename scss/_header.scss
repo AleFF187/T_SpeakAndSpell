@@ -42,7 +42,7 @@
   position: relative;
   @include left_border;
   padding:0 25px;
-  &::after{
+  &::after {
     content: '';
     position: absolute;
     top: 50%;
@@ -60,7 +60,7 @@
   width: 100%;
 }
 
-.header__search_box{
+.header__search_box {
   width: 100%;
   height: 35px;  
   border: 1px solid var(--midviolet);
@@ -68,7 +68,7 @@
   font-size: 1.1rem;
   color: var(--violet);
   padding-left: 50px;
-  &::placeholder{
+  &::placeholder {
     font-size: 1rem;
     color: var(--violet);
   }
@@ -102,7 +102,7 @@
   overflow: hidden;
 }
 
-.header__user_menu{
+.header__user_menu {
   cursor: pointer;
   width: 40px;
   padding: 0 10px;
@@ -118,77 +118,6 @@
   user-select: none;
 }  
 
-.header__languages_switch{
-  position: relative;
-  display: inline-block;
-  width: 50px;
-  height: 20px;  
-  border-radius: 20px;
-  cursor: pointer;
-}
-
-.languages__switch_input{
-  margin: 0;
-  position: absolute;
-  top: 0px;
-  left: 0px; 
-  z-index: 100;
-  opacity: 0;
-}
-
-.languages__switch_background{  
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  // z-index: 0;
-  background: var(--lightviolet);  
-  border: 1px solid var(--midviolet);
-  border-radius: 20px;
-}
-
-.languages__switch_slider{
-  width: 10px;
-  height: 10px;
-  background: var(--violet);
-  border-radius: 50%;
-  position: absolute;
-  top: 5px;
-  left: 5px;
-  transition: transform 0.3s ease;
-}
-
-.languages__switch_text{
-  font-size: 1rem;
-  font-weight: 900;
-  color: var(--midviolet);
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-}
-
-.languages__switch_input:checked ~ .languages__switch_slider{  
-  transform: translateX(30px);
-  transition: transform 0.3s ease;
-}
-
-.languages__switch_rus-text {
-  left: -25px;
-}
-
-.languages__switch_eng-text {
-  right: -25px;
-}
-
-.languages__switch_input:not(:checked) ~ .languages__switch_rus-text{
-  color: var(--orange);
-}
-
-.languages__switch_input:checked ~ .languages__switch_eng-text{
-  color: var(--orange);
-}
-  
 // *******************************************************
 .header__notification {
   position: relative;
@@ -204,7 +133,7 @@
   width: 25px; 
 }
 
-.header__notification_counter{
+.header__notification_counter {
   position: absolute;
   top: 50%;
   left: 50%;
