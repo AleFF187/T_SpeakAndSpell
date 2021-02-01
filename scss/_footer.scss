@@ -1,0 +1,12 @@
+.footer {
+  color: var(--lightviolet);
+  background-color: #3c425f;
+  grid-area: footer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 39px;
+  font-weight: 500;
+  font-size: 0.8rem;  
+  letter-spacing: 0.2em;
+}
