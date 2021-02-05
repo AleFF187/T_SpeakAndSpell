@@ -221,5 +221,94 @@ body {
 // *******************************************************
 .main__lessons {
   grid-area: main__lessons;
-  background-color: tomato;
+}
+
+.tab__wrapper {
+  display: flex;
+  color: var(--violet);
+}
+
+//* стили для кнопок 
+.tab__buttons_wrapper {
+  width: 290px;  
+  background-color: var(--lightviolet);
+  border: 1px solid var(--midviolet);
+  .tab__button + .tab__button {
+    margin-top: 5px;
+  }
+}
+
+.tab__buttons_title {
+  font-size: 1.25rem;
+  font-weight: 500;
+  letter-spacing: 0.1em;
+  padding: 10px 0 20px 30px;
+  position: relative;
+  &::after {
+    content: '';
+    width: 250px;
+    height: 1px;
+    background-color: var(--violet);
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translateX(-50%);
+  }  
+}
+
+.tab__button {
+  width: 90%;
+  margin: 0 auto;
+  font-size: 20px;
+  overflow: hidden;
+  cursor: pointer;
+  padding: 5px 10px;
+  border: 1px solid var(--midviolet);
+  user-select: none;
+}
+
+.tab__button_title {
+  font-size: 1.2rem;
+  font-weight: 500;  
+  letter-spacing: 0.2rem;
+}
+
+.tab__button_text {
+  font-size: 0.95rem;
+  font-weight: 500;
+  padding: 5px 0 0 10px;
+}
+
+.tab__button_active {
+  color: var(--white);
+  background-color: var(--midviolet);
+}
+
+//* стили для содержимого вкладок 
+
+.tab__content_wrapper {
+  width: 550px;
+  height: 250px;
+  margin-right: 20px;
+}
+
+.tab__content {
+  display: none;
+  width: 100%;
+  height: 100%;
+  font-size: 15px; 
+  line-height: 1.5em;
+  padding: 10px 20px;
+  background-color: var(--lightviolet);
+  border: 1px solid var(--midviolet);
+}
+
+.tab__content_active {
+  display: block;
+}
+
+.tab__content_text{
+  font-size: 1rem;
+  font-weight: 500;
+  text-align: justify;
 }
