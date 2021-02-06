@@ -43,22 +43,19 @@ body {
 // *******************************************************
 .main__slider {
   grid-area: main__slider;  
-  background-color: tomato;
 }
 
 .swiper-container {
   width: 800px;
   height: 300px;
-  // position: relative;
-}
-
-.swiper-slide {
-  background-color:gold;
+  border: 1px solid var(--midviolet);
+  border-radius: 25px;
+  background-color: var(--lightviolet);
 }
 
 .swiper-button-prev, 
 .swiper-button-next {
-  background-color: #fff;
+  background-color: var(--lightviolet);
   background-size: 20%;
   background-repeat: no-repeat;
   border-radius: 50%;  
@@ -85,6 +82,53 @@ body {
 
 .swiper-button-next, .swiper-container-rtl .swiper-button-prev{
   right: -42px !important;
+}
+
+.slide{
+  color: var(--violet);
+  font-weight: 500;
+}
+
+.slide__wrapper{
+  padding: 15px 55px 15px 40px;
+  height: 250px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.slide__title {
+  font-size: 1.5rem;
+  width: 100%;
+  overflow: hidden;
+  padding: 0 0 20px;
+}
+
+.slide__text_wrapper{
+  flex: 1 1 0;
+  overflow: hidden;
+}
+
+.slide__text {  
+  font-size: 1.1rem;
+  line-height: 1.2em;  
+  padding: 0 0 10px 25px;
+  text-align: justify;  
+  text-indent: 20px;
+}
+
+.slide__link {
+  display: block;
+  margin-top: 15px;  
+  text-align: center;
+  font-size: 0.9rem;
+  font-weight: 900;  
+  letter-spacing: 0.2em;
+  text-decoration: underline;
+  &:hover{
+    color: var(--orange);
+
+  }
 }
 
 // *******************************************************
