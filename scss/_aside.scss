@@ -46,24 +46,27 @@
 .aside__nav_list {
   padding-top: 10px;
   li+li{
-    padding-top: 25px;
+    padding-top: 10px;
   }
 }
 
 .aside__nav_item {
-  padding-left: 20px;
+  padding-left: 10px;
 }
 
 .aside__nav_item-link {
+  width: 90%;
+  overflow: hidden;
+  display: block;
+  padding: 10px;
   font-weight: 500;
   font-size: 1.25rem;
   line-height: 20px;
   color: var(--midviolet);
-  border-bottom: 1px solid transparent;
   transition: all 0.2s;
   &:hover {    
-    color: var(--violet);
-    border-bottom: 1px solid var(--violet);
+    color: var(--lightviolet);
+    background-color: var(--midviolet);
     transition: all 0.1s;
   }
 }
