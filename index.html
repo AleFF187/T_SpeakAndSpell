@@ -7,9 +7,10 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
   <title>Document</title>
   <link rel="stylesheet" href="css/libs.min.css" />
-  <link rel="stylesheet" href="css/style.min.css" />
+  <link rel="stylesheet" href="css/style.min.css" />  
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;900&display=swap" rel="stylesheet"> 
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
 </head>
 
 <body class="page container">
@@ -96,7 +97,20 @@
 
 
   <main class="main">
-    <section class="main__slider">слайдер</section>
+    <section class="main__slider">
+      <div class="swiper-container">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">Slide 1</div>
+          <div class="swiper-slide">Slide 2</div>
+          <div class="swiper-slide">Slide 3</div>
+          <div class="swiper-slide">Slide 4</div>
+          <div class="swiper-slide">Slide 5</div>
+        </div>
+        <div class="swiper-pagination"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+      </div>
+    </section>
 
     <section class="main__events events">
       <div class="events__wrapper_first">
@@ -205,6 +219,7 @@
     <div class="footer__copy">© AleFF</div>
   </footer>
 
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
   <script src="js/main.js"></script>
 </body>
 
