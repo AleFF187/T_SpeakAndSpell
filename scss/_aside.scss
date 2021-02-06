@@ -1,9 +1,5 @@
 .aside {
   background-color: var(--lightgray);
-  grid-area: aside;
-  display: grid;
-  grid-template-rows: 80px 1fr 150px;
-  // border-left: 1px solid var(--lightviolet);
   border-right: 1px solid var(--midviolet);
 }
 
